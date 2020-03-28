@@ -1,0 +1,9 @@
+FirstName,LastName,Phone,Zip
+John,Smith,(555) 123-4567,94105
+Jane,Smith,(555) 123-4567,94105-1245
+Jack,Smith,444.123.4567,94105
+Josh,Smith,(456) 789-0123,94109
+,,15556549873,
+Jack,,14441234567,
+,Smith,,
+Josh,Smith,,94109
