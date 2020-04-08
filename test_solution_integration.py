@@ -7,12 +7,12 @@ class TestSolutionInt(unittest.TestCase):
     # Test to check original Input (Input1.csv)
     solution.record_linkage('input1.csv', 'same_email')
     with open('output1.csv', 'r') as test_output_csv:
-        test_output = dict()
+        test_output = {}
         for row in csv.DictReader(test_output_csv, delimiter="\t"):
             test_output.update(row)
 
     with open('sample_output.csv', 'r') as sample_output_csv:
-        sample_output = dict()
+        sample_output = {}
         for row in csv.DictReader(sample_output_csv, delimiter="\t"):
             sample_output.update(row)
 
@@ -22,12 +22,12 @@ class TestSolutionInt(unittest.TestCase):
     # Test to check one more input (input2_test)
     solution.record_linkage('input2_test.csv', 'same_contact')
     with open('output1.csv', 'r') as test_output_2_csv:
-        test_output_2 = dict()
+        test_output_2 = {}
         for row in csv.DictReader(test_output_2_csv, delimiter="\t"):
             test_output_2.update(row)
 
     with open('sample_output_2.csv', 'r') as sample_output_2_csv:
-        sample_output_2 = dict()
+        sample_output_2 = {}
         for row in csv.DictReader(sample_output_2_csv, delimiter="\t"):
             sample_output_2.update(row)
 
