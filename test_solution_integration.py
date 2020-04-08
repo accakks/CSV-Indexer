@@ -5,7 +5,7 @@ import solution
 
 class TestSolutionInt(unittest.TestCase):
     # Test to check original Input (Input1.csv)
-    test_output_run = solution.record_linkage('input1.csv', 'same_email')
+    solution.record_linkage('input1.csv', 'same_email')
     with open('output1.csv', 'r') as test_output_csv:
         test_output = dict()
         for row in csv.DictReader(test_output_csv, delimiter="\t"):
@@ -20,8 +20,7 @@ class TestSolutionInt(unittest.TestCase):
         self.assertEqual(self.test_output, self.sample_output)
 
     # Test to check one more input (input2_test)
-    test_output_run_2 = solution.record_linkage(
-        'input2_test.csv', 'same_contact')
+    solution.record_linkage('input2_test.csv', 'same_contact')
     with open('output1.csv', 'r') as test_output_2_csv:
         test_output_2 = dict()
         for row in csv.DictReader(test_output_2_csv, delimiter="\t"):
